@@ -1,21 +1,43 @@
 ---
-name: Getting Started
+name: Pickitt
 route: /
 order: 1
 ---
 
-# Getting Started
+import pickImgPath from './images/pick.svg'
+import pickStyle from './styles'
 
-Design systems enable teams to build better products faster by making design reusable—reusability makes scale possible. This is the heart and primary value of design systems. A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications.
+# Pickitt
 
-Regardless of the technologies and tools behind them, a successful design system follows these guiding principles:
+<img src={pickImgPath} style={pickStyle}/>
 
-- **It’s consistent**. The way components are built and managed follows a predictable pattern.
-- **It’s self-contained**. Your design system is treated as a standalone dependency.
-- **It’s reusable**. You’ve built components so they can be reused in many contexts.
-- **It’s accessible**. Applications built with your design system are usable by as many people as possible, no matter how they access the web.
-- **It’s robust**. No matter the product or platform to which your design system is applied, it should perform with grace and minimal bugs.
+[![NPM Version][npm-image]][npm-url]     [![NPM Total Downloads][npm-downloads]][npm-url]
 
-## Consistency
+> When you need you need a computer to just pick it, reach for Pickitt!
 
-Your first, most important task when starting out is to define the rules of your system, document them, and ensure that everyone follows them. When you have clearly documented code standards and best practices in place, designers and developers from across your organization can easily use and, more importantly, contribute to your design system.
+**Pickitt** is a simple utility function designed to help you pick an element from a collection.
+
+## Requirements
+Pickitt has no dependencies other than itself!
+
+## Installation
+```sh
+npm install pickitt
+```
+
+## Usage
+```js
+import { pickitt } from 'pickitt'
+
+const testArray = ['item1', 'item2', 'item3']
+
+const randomElement = pickitt(testArray) // <-- 'item2'
+```
+
+## Attribution
+Pick Icon by [freepik](http://www.freepik.com) from [www.flaticon.com](www.flaticon.com).
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/pickitt.svg
+[npm-downloads]: https://img.shields.io/npm/dt/pickitt.svg
+[npm-url]: https://www.npmjs.com/package/pickitt
