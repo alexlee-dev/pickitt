@@ -1,0 +1,25 @@
+{
+  "name": "pickitt",
+  "version": "0.0.1",
+  "description": "When you need you need a computer to just pick it, reach for Pickitt!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlee-dev/pickitt.git"
+  },
+  "keywords": [
+    "random",
+    "new",
+    "pick",
+    "list"
+  ],
+  "author": "Alex Lee <alexlee-dev>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/alexlee-dev/pickitt/issues"
+  },
+  "homepage": "https://github.com/alexlee-dev/pickitt#readme"
+}
