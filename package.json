@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "description": "When you need you need a computer to just pick it, reach for Pickitt!",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexlee-dev/pickitt.git"
