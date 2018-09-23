@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/alexlee-dev/pickitt/issues"
   },
-  "homepage": "https://github.com/alexlee-dev/pickitt#readme",
+  "homepage": "https://pickitt.netlify.com/",
   "dependencies": {},
   "devDependencies": {
     "ajv": "^6.5.4",
