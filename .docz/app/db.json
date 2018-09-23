@@ -1,0 +1,119 @@
+{
+  "config": {
+    "title": "Pickitt",
+    "description": "When you need you need a computer to just pick it, reach for Pickitt!",
+    "themeConfig": {},
+    "ordering": "descending",
+    "version": "0.0.1",
+    "repository": "https://github.com/alexlee-dev/pickitt",
+    "native": false
+  },
+  "entries": {
+    "documentation/index.mdx": {
+      "name": "Getting Started",
+      "route": "/",
+      "order": 1,
+      "id": "3a8e6ff9e55490342dd42ec9faf69810",
+      "filepath": "documentation/index.mdx",
+      "link": "https://github.com/alexlee-dev/pickitt/edit/master/documentation/index.mdx",
+      "slug": "documentation-index",
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "getting-started",
+          "value": "Getting Started"
+        },
+        {
+          "depth": 2,
+          "slug": "consistency",
+          "value": "Consistency"
+        }
+      ]
+    },
+    "documentation/components/Alert.mdx": {
+      "name": "Alert",
+      "menu": "Components",
+      "id": "1def9ada82480f7d103e31fa3e484f51",
+      "filepath": "documentation/components/Alert.mdx",
+      "link": "https://github.com/alexlee-dev/pickitt/edit/master/documentation/components/Alert.mdx",
+      "slug": "documentation-components-alert",
+      "route": "/documentation-components-alert",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "alert",
+          "value": "Alert"
+        },
+        {
+          "depth": 2,
+          "slug": "properties",
+          "value": "Properties"
+        },
+        {
+          "depth": 2,
+          "slug": "basic-usage",
+          "value": "Basic usage"
+        },
+        {
+          "depth": 2,
+          "slug": "using-different-kinds",
+          "value": "Using different kinds"
+        },
+        {
+          "depth": 2,
+          "slug": "use-with-children-as-a-function",
+          "value": "Use with children as a function"
+        }
+      ]
+    },
+    "documentation/components/Button.mdx": {
+      "name": "Button",
+      "menu": "Components",
+      "id": "66bc5140f5fe2cfc7e36481791684e15",
+      "filepath": "documentation/components/Button.mdx",
+      "link": "https://github.com/alexlee-dev/pickitt/edit/master/documentation/components/Button.mdx",
+      "slug": "documentation-components-button",
+      "route": "/documentation-components-button",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "button",
+          "value": "Button"
+        },
+        {
+          "depth": 3,
+          "slug": "best-practices",
+          "value": "Best practices"
+        },
+        {
+          "depth": 2,
+          "slug": "properties",
+          "value": "Properties"
+        },
+        {
+          "depth": 2,
+          "slug": "basic-usage",
+          "value": "Basic usage"
+        },
+        {
+          "depth": 2,
+          "slug": "with-different-sizes",
+          "value": "With different sizes"
+        },
+        {
+          "depth": 2,
+          "slug": "with-different-colors",
+          "value": "With different colors"
+        },
+        {
+          "depth": 2,
+          "slug": "outlined",
+          "value": "Outlined"
+        }
+      ]
+    }
+  }
+}
