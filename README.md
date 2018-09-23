@@ -1,5 +1,5 @@
 # Pickitt
-When you need you need a computer to just pick it, reach for Pickitt
+> When you need you need a computer to just pick it, reach for Pickitt
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Total Downloads][npm-downloads]][npm-url]
