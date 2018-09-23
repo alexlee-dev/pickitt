@@ -1,0 +1,43 @@
+---
+name: Pickitt
+route: /
+order: 1
+---
+
+import pickImgPath from './images/pick.svg'
+import pickStyle from './styles'
+
+# Pickitt
+
+<img src={pickImgPath} style={pickStyle}/>
+
+[![NPM Version][npm-image]][npm-url]     [![NPM Total Downloads][npm-downloads]][npm-url]
+
+> When you need you need a computer to just pick it, reach for Pickitt!
+
+**Pickitt** is a simple utility function designed to help you pick an element from a collection.
+
+## Requirements
+Pickitt has no dependencies other than itself!
+
+## Installation
+```sh
+npm install pickitt
+```
+
+## Usage
+```js
+import { pickitt } from 'pickitt'
+
+const testArray = ['item1', 'item2', 'item3']
+
+const randomElement = pickitt(testArray) // <-- 'item2'
+```
+
+## Attribution
+Pick Icon by [freepik](http://www.freepik.com) from [www.flaticon.com](www.flaticon.com).
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/pickitt.svg
+[npm-downloads]: https://img.shields.io/npm/dt/pickitt.svg
+[npm-url]: https://www.npmjs.com/package/pickitt

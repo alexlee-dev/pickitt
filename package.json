@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "When you need you need a computer to just pick it, reach for Pickitt!",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexlee-dev/pickitt.git"
@@ -19,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/alexlee-dev/pickitt/issues"
   },
-  "homepage": "https://github.com/alexlee-dev/pickitt#readme"
+  "homepage": "https://github.com/alexlee-dev/pickitt#readme",
+  "dependencies": {
+    "docz": "^0.11.2",
+    "semantic-ui-css": "^2.4.0",
+    "semantic-ui-react": "^0.82.5"
+  }
 }
