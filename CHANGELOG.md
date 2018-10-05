@@ -1,5 +1,15 @@
 # Change Log
 
+## [v0.1.0](https://github.com/alexlee-dev/pickitt/tree/v0.1.0) (2018-10-05)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.0.5...v0.1.0)
+
+**Implemented enhancements:**
+
+- Add Homepage to package.json [\#3](https://github.com/alexlee-dev/pickitt/issues/3)
+- Add Changelog [\#2](https://github.com/alexlee-dev/pickitt/issues/2)
+- Adds homepage for package as netlify site. [\#5](https://github.com/alexlee-dev/pickitt/pull/5) ([alexlee-dev](https://github.com/alexlee-dev))
+- Issue \#2   add changelog [\#4](https://github.com/alexlee-dev/pickitt/pull/4) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.0.5](https://github.com/alexlee-dev/pickitt/tree/v0.0.5) (2018-09-23)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.0.4...v0.0.5)
 
