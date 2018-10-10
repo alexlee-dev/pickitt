@@ -10,7 +10,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "docz:dev": "docz dev",
     "docz:build": "docz build"
   },
