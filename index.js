@@ -4,7 +4,18 @@
  * @returns {Boolean} true | false
  */
 function isArray(group) {
-  return group.length > 0
+  if (
+    typeof group === 'string' ||
+    typeof group === 'number' ||
+    typeof group === 'boolean' ||
+    typeof group === 'undefined' ||
+    typeof group === 'function' ||
+    group === null
+  ) {
+    return false
+  } else {
+    return group.length > 0
+  }
 }
 
 /**
