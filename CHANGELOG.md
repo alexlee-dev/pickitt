@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.2.0](https://github.com/alexlee-dev/pickitt/tree/v0.2.0) (2018-10-10)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.1.0...v0.2.0)
+
+**Implemented enhancements:**
+
+- ✅ Add Tests for `isArray\(\)`, `randomBetween\(\)`, and `pickitt\(\)` [\#6](https://github.com/alexlee-dev/pickitt/pull/6) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.1.0](https://github.com/alexlee-dev/pickitt/tree/v0.1.0) (2018-10-05)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.0.5...v0.1.0)
 
