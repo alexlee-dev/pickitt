@@ -23,9 +23,13 @@ function randomBetween(max) {
  */
 function pickitt(group) {
   const array = isArray(group) ? group : undefined
-  const length = array.length
+  if (array) {
+    const length = array.length
 
-  return length > 0 ? array[randomBetween(length)] : undefined
+    return length > 0 ? array[randomBetween(length)] : undefined
+  } else {
+    return undefined
+  }
 }
 
 module.exports = {
