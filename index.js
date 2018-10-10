@@ -4,7 +4,18 @@
  * @returns {Boolean} true | false
  */
 function isArray(group) {
-  return group.length > 0
+  if (
+    typeof group === 'string' ||
+    typeof group === 'number' ||
+    typeof group === 'boolean' ||
+    typeof group === 'undefined' ||
+    typeof group === 'function' ||
+    group === null
+  ) {
+    return false
+  } else {
+    return group.length > 0
+  }
 }
 
 /**
@@ -23,11 +34,17 @@ function randomBetween(max) {
  */
 function pickitt(group) {
   const array = isArray(group) ? group : undefined
-  const length = array.length
+  if (array) {
+    const length = array.length
 
-  return length > 0 ? array[randomBetween(length)] : undefined
+    return length > 0 ? array[randomBetween(length)] : undefined
+  } else {
+    return undefined
+  }
 }
 
 module.exports = {
-  pickitt
+  pickitt,
+  isArray,
+  randomBetween
 }
