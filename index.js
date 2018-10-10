@@ -33,5 +33,7 @@ function pickitt(group) {
 }
 
 module.exports = {
-  pickitt
+  pickitt,
+  isArray,
+  randomBetween
 }
