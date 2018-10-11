@@ -1,10 +1,6 @@
 const { pickitt } = require('../index')
-require('jest-matcher-one-of')
-
 const exampleArray = ['elem1', 'elem2', 'elem3']
 const emptyArray = []
-const arrayLengthOne = ['elem1']
-const arrayLengthZero = []
 const object = { one: 1, two: 2 }
 const nonEmptyString = 'Example'
 const emptyString = ''
@@ -16,45 +12,65 @@ const exampleFunction = () => {
 }
 
 test('Gets an item from an example array.', () => {
-  expect(pickitt(exampleArray)).toBeOneOf(['elem1', 'elem2', 'elem3'])
+  expect(exampleArray.includes(pickitt(exampleArray))).toEqual(true)
 })
 
 test('Throws an error with "empty array" for an empty array.', () => {
-  expect(pickitt(emptyArray)).toThrow('empty array')
+  expect(() => {
+    pickitt(emptyArray)
+  }).toThrow()
 })
 
 test('Throws an error with "object" if group is an object.', () => {
-  expect(pickitt(object)).toThrow('object')
+  expect(() => {
+    pickitt(object)
+  }).toThrow()
 })
 
 test('Throws an error with "string" if group is a string.', () => {
-  expect(pickitt(nonEmptyString)).toThrow('string')
+  expect(() => {
+    pickitt(nonEmptyString)
+  }).toThrow()
 })
 
 test('Throws an error with "string" if group is an empty string.', () => {
-  expect(pickitt(emptyString)).toThrow('string')
+  expect(() => {
+    pickitt(emptyString)
+  }).toThrow()
 })
 
 test('Throws an error with "number" if group is a number.', () => {
-  expect(pickitt(number)).toThrow('number')
+  expect(() => {
+    pickitt(number)
+  }).toThrow()
 })
 
 test('Throws an error with "boolean" if group is a boolean = true.', () => {
-  expect(pickitt(booleanTrue)).toThrow('boolean')
+  expect(() => {
+    pickitt(booleanTrue)
+  }).toThrow()
 })
 
 test('Throws an error with "boolean" if group is a boolean = false.', () => {
-  expect(pickitt(booleanFalse)).toThrow('boolean')
+  expect(() => {
+    pickitt(booleanFalse)
+  }).toThrow()
 })
 
 test('Throws an error with "function" if group is a function', () => {
-  expect(pickitt(exampleFunction)).toThrow('function')
+  expect(() => {
+    pickitt(exampleFunction)
+  }).toThrow()
 })
 
 test('Throws an error with "undefined" if group is undefined.', () => {
-  expect(pickitt(undefined)).toThrow('undefined')
+  expect(() => {
+    pickitt(undefined)
+  }).toThrow()
 })
 
 test('Throws an error with "null" if group is null.', () => {
-  expect(pickitt(null)).toThrow('null')
+  expect(() => {
+    pickitt(null)
+  }).toThrow()
 })
