@@ -34,6 +34,7 @@
   "devDependencies": {
     "docz": "^0.11.2",
     "jest": "^23.6.0",
-    "jest-matcher-one-of": "^0.1.2"
+    "jest-matcher-one-of": "^0.1.2",
+    "@types/node": "^10.11.7"
   }
 }
