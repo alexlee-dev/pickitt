@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Checks if a `group` is similar to an array: if the `group` has a length greater than 0.
  * @param {*} group The group to be checked.
@@ -17,7 +18,6 @@ function isArray(group) {
     return group.length > 0
   }
 }
-
 /**
  * Gets a random number between 0 and a `max`.
  * @param {Number} max A number as a maximum boundary.
@@ -26,25 +26,24 @@ function isArray(group) {
 function randomBetween(max) {
   return Math.floor(Math.random() * max)
 }
-
 /**
  * Get a randomly chosen element from a group of elements.
  * @param {*} group A group of items to pick from.
  * @returns {Element | Undefined} A randomly chosen element from the group. Returns `undefined` if the group didn't have a length greater than 0.
  */
 function pickitt(group) {
-  const array = isArray(group) ? group : undefined
+  var array = isArray(group) ? group : undefined
   if (array) {
-    const length = array.length
-
-    return length > 0 ? array[randomBetween(length)] : undefined
+    var length_1 = array.length
+    return length_1 > 0 ? array[randomBetween(length_1)] : undefined
   } else {
-    return undefined
+    throw 'pickit: Function expected array, and instead got ' +
+      typeof group +
+      '.'
   }
 }
-
 module.exports = {
-  pickitt,
-  isArray,
-  randomBetween
+  pickitt: pickitt,
+  isArray: isArray,
+  randomBetween: randomBetween
 }
