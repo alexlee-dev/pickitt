@@ -10,7 +10,7 @@
 
 ## Documentation
 
-www.pickitt.netlify.com
+https://pickitt.netlify.com/
 
 ## Requirements
 
