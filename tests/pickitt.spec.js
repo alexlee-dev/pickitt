@@ -15,10 +15,8 @@ test('Gets an item from an example array.', () => {
   expect(exampleArray.includes(pickitt(exampleArray))).toEqual(true)
 })
 
-test('Throws an error with "empty array" for an empty array.', () => {
-  expect(() => {
-    pickitt(emptyArray)
-  }).toThrow()
+test('Returns undefined if group is an array with length 0.', () => {
+  expect(pickitt(emptyArray)).toBeUndefined()
 })
 
 test('Throws an error with "object" if group is an object.', () => {
