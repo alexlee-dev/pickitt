@@ -22,9 +22,13 @@
   },
   "keywords": [
     "random",
-    "new",
-    "pick",
     "list",
+    "picker",
+    "pick",
+    "choose",
+    "chooser",
+    "utility",
+    "utility-function",
     "sample"
   ],
   "author": "Alex Lee <alexlee-dev>",
