@@ -1,5 +1,29 @@
 # Change Log
 
+## [v0.4.0](https://github.com/alexlee-dev/pickitt/tree/v0.4.0) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.3.2...v0.4.0)
+
+**Fixed bugs:**
+
+- Docz Is Broken - Find a FIx [\#19](https://github.com/alexlee-dev/pickitt/issues/19)
+- Update Dependencies [\#16](https://github.com/alexlee-dev/pickitt/issues/16)
+- ➕ Temp Fix for Docz by Installing Buble v0.19.4 [\#20](https://github.com/alexlee-dev/pickitt/pull/20) ([alexlee-dev](https://github.com/alexlee-dev))
+
+**Merged pull requests:**
+
+- Bump docz from 0.11.2 to 0.12.5 [\#18](https://github.com/alexlee-dev/pickitt/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump @types/node from 10.11.7 to 10.12.0 [\#17](https://github.com/alexlee-dev/pickitt/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v0.3.2](https://github.com/alexlee-dev/pickitt/tree/v0.3.2) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.3.1...v0.3.2)
+
+**Implemented enhancements:**
+
+- Merge Boolean & String Tests [\#11](https://github.com/alexlee-dev/pickitt/issues/11)
+- Group Tests [\#10](https://github.com/alexlee-dev/pickitt/issues/10)
+- ✅ More Test Grouping [\#15](https://github.com/alexlee-dev/pickitt/pull/15) ([alexlee-dev](https://github.com/alexlee-dev))
+- ✅ Group Tests Together [\#14](https://github.com/alexlee-dev/pickitt/pull/14) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.3.1](https://github.com/alexlee-dev/pickitt/tree/v0.3.1) (2018-10-17)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.3.0...v0.3.1)
 
