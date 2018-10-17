@@ -13,12 +13,8 @@ function randomBetween(max: number) {
  * @returns {Element | Undefined} A randomly chosen element from the group. Returns `undefined` if the group didn't have a length greater than 0.
  */
 function pickitt(group: any[]) {
-  const array = Array.isArray(group) ? group : undefined
-
-  if (array) {
-    const length = array.length
-
-    return length > 0 ? array[randomBetween(length)] : undefined
+  if (Array.isArray(group)) {
+    return group[randomBetween(group.length)]
   } else {
     throw `pickitt: Function expected array, and instead got ${typeof group}.`
   }
