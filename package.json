@@ -7,7 +7,9 @@
     "LICENSE",
     "package.json",
     "README.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "index.js",
+    "index.ts"
   ],
   "scripts": {
     "test": "jest --coverage",
@@ -22,7 +24,8 @@
     "random",
     "new",
     "pick",
-    "list"
+    "list",
+    "sample"
   ],
   "author": "Alex Lee <alexlee-dev>",
   "license": "GPL-2.0",
