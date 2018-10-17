@@ -1,5 +1,13 @@
 # Change Log
 
+## [v0.4.1](https://github.com/alexlee-dev/pickitt/tree/v0.4.1) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.4.0...v0.4.1)
+
+**Implemented enhancements:**
+
+- Add Favicon [\#12](https://github.com/alexlee-dev/pickitt/issues/12)
+- 🎨 Add Favicon [\#21](https://github.com/alexlee-dev/pickitt/pull/21) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.4.0](https://github.com/alexlee-dev/pickitt/tree/v0.4.0) (2018-10-17)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.3.2...v0.4.0)
 
