@@ -1,12 +1,15 @@
 # Pickitt
 
-[![Pickitt][pick-img]] [](www.pickitt.netlify.com)
+[![Pickitt](https://github.com/alexlee-dev/pickitt/blob/master/documentation/images/pick.svg | width=25)
 
 [![NPM Version][npm-image]][npm-url]     [![NPM Total Downloads][npm-downloads]][npm-url]     [![npm bundle size (minified + gzip)][size-image]][npm-url]
 
 > When you need you need a computer to just pick it, reach for Pickitt!
 
 **Pickitt** is a simple utility function designed to help you pick an element from an array.
+
+## Documentation
+[](www.pickitt.netlify.com)
 
 ## Requirements
 Pickitt has no dependencies other than itself!
@@ -37,4 +40,4 @@ const randomElement = pickitt(testArray) // <-- 'item1', 'item2', or 'item3'
 [npm-downloads]: https://img.shields.io/npm/dt/pickitt.svg
 [npm-url]: https://www.npmjs.com/package/pickitt
 [size-image]: https://img.shields.io/bundlephobia/minzip/pickitt.svg
-[pick-img]: https://github.com/alexlee-dev/pickitt/blob/master/documentation/images/pick.svg
+[pick-img]: 
