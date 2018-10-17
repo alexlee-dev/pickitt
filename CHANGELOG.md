@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.0.2](https://github.com/alexlee-dev/pickitt/tree/v1.0.2) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v1.0.1...v1.0.2)
+
 ## [v1.0.1](https://github.com/alexlee-dev/pickitt/tree/v1.0.1) (2018-10-17)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v1.0.0...v1.0.1)
 
