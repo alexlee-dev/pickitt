@@ -9,7 +9,7 @@
 **Pickitt** is a simple utility function designed to help you pick an element from an array.
 
 ## Documentation
-[www.pickitt.netlify.com]
+www.pickitt.netlify.com
 
 ## Requirements
 Pickitt has no dependencies other than itself!
