@@ -40,8 +40,9 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.11.7",
+    "buble": "^0.19.4",
     "docz": "^0.12.5",
     "jest": "^23.6.0",
-    "buble": "^0.19.4"
+    "logrocket": "^0.6.17"
   }
 }
