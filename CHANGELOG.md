@@ -1,5 +1,13 @@
 # Change Log
 
+## [v0.3.1](https://github.com/alexlee-dev/pickitt/tree/v0.3.1) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.3.0...v0.3.1)
+
+**Implemented enhancements:**
+
+- Don't Throw Error on Empty Array [\#9](https://github.com/alexlee-dev/pickitt/issues/9)
+- ➖ No Longer Throw on Empty Array [\#13](https://github.com/alexlee-dev/pickitt/pull/13) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.3.0](https://github.com/alexlee-dev/pickitt/tree/v0.3.0) (2018-10-11)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.2.1...v0.3.0)
 
