@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.0.0](https://github.com/alexlee-dev/pickitt/tree/v1.0.0) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.5.0...v1.0.0)
+
+**Implemented enhancements:**
+
+- Add Tag About Size [\#29](https://github.com/alexlee-dev/pickitt/issues/29)
+- Edit Files in Package.json [\#27](https://github.com/alexlee-dev/pickitt/issues/27)
+- Add LogRocket [\#22](https://github.com/alexlee-dev/pickitt/issues/22)
+- 🚀 Add LogRocket [\#31](https://github.com/alexlee-dev/pickitt/pull/31) ([alexlee-dev](https://github.com/alexlee-dev))
+- ✨ Add Min + GZip Size Badge to Docs [\#30](https://github.com/alexlee-dev/pickitt/pull/30) ([alexlee-dev](https://github.com/alexlee-dev))
+- ✏️ Edit Files in Package.json [\#28](https://github.com/alexlee-dev/pickitt/pull/28) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.5.0](https://github.com/alexlee-dev/pickitt/tree/v0.5.0) (2018-10-17)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.4.2...v0.5.0)
 
