@@ -1,5 +1,14 @@
 # Change Log
 
+## [v0.4.2](https://github.com/alexlee-dev/pickitt/tree/v0.4.2) (2018-10-17)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.4.1...v0.4.2)
+
+**Implemented enhancements:**
+
+- Make Buble a devDependency [\#23](https://github.com/alexlee-dev/pickitt/issues/23)
+- Add Playground [\#8](https://github.com/alexlee-dev/pickitt/issues/8)
+- ➖ Make Buble a devDependency not a Dependency [\#24](https://github.com/alexlee-dev/pickitt/pull/24) ([alexlee-dev](https://github.com/alexlee-dev))
+
 ## [v0.4.1](https://github.com/alexlee-dev/pickitt/tree/v0.4.1) (2018-10-17)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v0.4.0...v0.4.1)
 
