@@ -30,12 +30,11 @@
     "url": "https://github.com/alexlee-dev/pickitt/issues"
   },
   "homepage": "https://pickitt.netlify.com/",
-  "dependencies": {
-    "buble": "^0.19.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.11.7",
     "docz": "^0.12.5",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "buble": "^0.19.4"
   }
 }
