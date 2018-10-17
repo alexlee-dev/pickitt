@@ -18,10 +18,6 @@ function pickitt(group: any[]) {
   if (array) {
     const length = array.length
 
-    if (length < 0) {
-      throw `pickitt: Array must not be empty. Please supply an array with at least one element.`
-    }
-
     return length > 0 ? array[randomBetween(length)] : undefined
   } else {
     throw `pickitt: Function expected array, and instead got ${typeof group}.`

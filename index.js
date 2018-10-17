@@ -16,9 +16,6 @@ function pickitt(group) {
     var array = Array.isArray(group) ? group : undefined;
     if (array) {
         var length_1 = array.length;
-        if (length_1 === 0) {
-            throw "pickitt: Array must not be empty. Please supply an array with at least one element.";
-        }
         return length_1 > 0 ? array[randomBetween(length_1)] : undefined;
     }
     else {
