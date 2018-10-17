@@ -1,3 +1,6 @@
 export default {
-  ordering: 'ascending'
+  ordering: 'ascending',
+  htmlContext: {
+    favicon: '../documentation/images/favicon.ico'
+  }
 }
