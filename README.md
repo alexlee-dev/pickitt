@@ -1,6 +1,6 @@
 # Pickitt
 
-[![Pickitt](https://github.com/alexlee-dev/pickitt/blob/master/documentation/images/pick.svg | width=25)
+<img src="https://github.com/alexlee-dev/pickitt/blob/master/documentation/images/pick.svg" alt="Pickitt" width="25" height="25">
 
 [![NPM Version][npm-image]][npm-url]     [![NPM Total Downloads][npm-downloads]][npm-url]     [![npm bundle size (minified + gzip)][size-image]][npm-url]
 
@@ -9,7 +9,7 @@
 **Pickitt** is a simple utility function designed to help you pick an element from an array.
 
 ## Documentation
-[](www.pickitt.netlify.com)
+[www.pickitt.netlify.com]
 
 ## Requirements
 Pickitt has no dependencies other than itself!
