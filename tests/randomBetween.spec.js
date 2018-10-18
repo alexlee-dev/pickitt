@@ -1,4 +1,4 @@
-const { randomBetween } = require('../index')
+const { randomBetween } = require('../src/randomBetween')
 
 const object = { one: 1, two: 2 }
 const nonEmptyString = 'Example'

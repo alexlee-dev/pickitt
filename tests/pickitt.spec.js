@@ -1,4 +1,4 @@
-const { pickitt } = require('../index')
+const { pickitt } = require('../src/pickitt')
 const exampleArray = ['elem1', 'elem2', 'elem3']
 const emptyArray = []
 const object = { one: 1, two: 2 }
