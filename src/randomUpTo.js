@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {Number} max A number as a maximum boundary.
  * @returns {Number} A number between 0 and the `max`.
  */
-function randomBetween(max) {
+function randomUpTo(max) {
     return Math.floor(Math.random() * max);
 }
-exports.randomBetween = randomBetween;
+exports.randomUpTo = randomUpTo;

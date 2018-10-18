@@ -1,4 +1,4 @@
-import { randomBetween } from './randomBetween'
+import { randomUpTo } from './randomUpTo'
 
 /**
  * Get a randomly chosen element from a group of elements.
@@ -7,7 +7,7 @@ import { randomBetween } from './randomBetween'
  */
 export function pickitt(group: any[]) {
   if (Array.isArray(group)) {
-    return group[randomBetween(group.length)]
+    return group[randomUpTo(group.length)]
   } else {
     throw `pickitt: Function expected array, and instead got ${typeof group}.`
   }

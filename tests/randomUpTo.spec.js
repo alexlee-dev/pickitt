@@ -1,4 +1,4 @@
-const { randomBetween } = require('../src/randomBetween')
+const { randomUpTo } = require('../src/randomUpTo')
 
 const object = { one: 1, two: 2 }
 const nonEmptyString = 'Example'
@@ -9,53 +9,53 @@ const exampleFunction = () => {
   return 1
 }
 
-describe('Type Tests for randomBetween().', () => {
+describe('Type Tests for randomUpTo().', () => {
   describe('Max = Object', () => {
     test('Returns NaN if max is an object.', () => {
-      expect(randomBetween(object)).toBeFalsy()
+      expect(randomUpTo(object)).toBeFalsy()
     })
   })
 
   describe('Max = String', () => {
     test('Returns NaN if max is a string with length > 0.', () => {
-      expect(randomBetween(nonEmptyString)).toBeFalsy()
+      expect(randomUpTo(nonEmptyString)).toBeFalsy()
     })
 
     test('Returns NaN if max is an empty string.', () => {
-      expect(randomBetween(emptyString)).toBeFalsy()
+      expect(randomUpTo(emptyString)).toBeFalsy()
     })
   })
 
   describe('Max = Number', () => {
     test('Returns a random whole number between 0 and a max if max is a number.', () => {
-      expect(randomBetween(100)).toBeGreaterThan(0)
-      expect(randomBetween(100)).toBeLessThanOrEqual(100)
+      expect(randomUpTo(100)).toBeGreaterThan(0)
+      expect(randomUpTo(100)).toBeLessThanOrEqual(100)
     })
   })
 
   describe('Max = Boolean', () => {
     test('Returns NaN if max is a boolean = true.', () => {
-      expect(randomBetween(booleanTrue)).toBeFalsy()
+      expect(randomUpTo(booleanTrue)).toBeFalsy()
     })
 
     test('Returns NaN if max is a boolean = false.', () => {
-      expect(randomBetween(booleanFalse)).toBeFalsy()
+      expect(randomUpTo(booleanFalse)).toBeFalsy()
     })
   })
 
   describe('Max = Function', () => {
     test('Returns NaN if max is a function', () => {
-      expect(randomBetween(exampleFunction)).toBeFalsy()
+      expect(randomUpTo(exampleFunction)).toBeFalsy()
     })
   })
 
   describe('Max = Other Falsy Types', () => {
     test('Returns NaN if max is undefined.', () => {
-      expect(randomBetween(undefined)).toBeFalsy()
+      expect(randomUpTo(undefined)).toBeFalsy()
     })
 
     test('Returns NaN if group is null.', () => {
-      expect(randomBetween(null)).toBeFalsy()
+      expect(randomUpTo(null)).toBeFalsy()
     })
   })
 })
