@@ -30,7 +30,11 @@
     "utility-function",
     "sample"
   ],
-  "author": "Alex Lee <alexlee-dev>",
+  "author": {
+    "name": "Alex Lee",
+    "email": "alex@alex-lee.site",
+    "url": "https://www.alex-lee.site/"
+  },
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/alexlee-dev/pickitt/issues"
