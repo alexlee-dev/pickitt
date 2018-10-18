@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var randomBetween_1 = require("./randomBetween");
+var randomUpTo_1 = require("./randomUpTo");
 /**
  * Get a randomly chosen element from a group of elements.
  * @param {*} group A group of items to pick from.
@@ -8,7 +8,7 @@ var randomBetween_1 = require("./randomBetween");
  */
 function pickitt(group) {
     if (Array.isArray(group)) {
-        return group[randomBetween_1.randomBetween(group.length)];
+        return group[randomUpTo_1.randomUpTo(group.length)];
     }
     else {
         throw "pickitt: Function expected array, and instead got " + typeof group + ".";
