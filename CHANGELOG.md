@@ -1,5 +1,15 @@
 # Change Log
 
+## [v1.1.1](https://github.com/alexlee-dev/pickitt/tree/v1.1.1) (2018-11-15)
+[Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v1.1.0...v1.1.1)
+
+**Merged pull requests:**
+
+- Bump docz from 0.12.5 to 0.12.11 [\#63](https://github.com/alexlee-dev/pickitt/pull/63) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump @types/node from 10.12.0 to 10.12.8 [\#61](https://github.com/alexlee-dev/pickitt/pull/61) ([dependabot[bot]](https://github.com/apps/dependabot))
+- \[Security\] Bump merge from 1.2.0 to 1.2.1 [\#59](https://github.com/alexlee-dev/pickitt/pull/59) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buble from 0.19.4 to 0.19.6 [\#51](https://github.com/alexlee-dev/pickitt/pull/51) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.1.0](https://github.com/alexlee-dev/pickitt/tree/v1.1.0) (2018-10-18)
 [Full Changelog](https://github.com/alexlee-dev/pickitt/compare/v1.0.2...v1.1.0)
 
