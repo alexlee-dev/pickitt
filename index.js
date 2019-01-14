@@ -1,5 +1,3 @@
-import { pickitt } from './src/pickitt'
+var pickitt = require('./src/pickitt');
 
-module.exports = {
-  pickitt: pickitt
-}
+module.exports = { pickitt }
