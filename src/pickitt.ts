@@ -12,3 +12,5 @@ export function pickitt(group: any[]) {
     throw `pickitt: Function expected array, and instead got ${typeof group}.`
   }
 }
+
+module.exports = pickitt;

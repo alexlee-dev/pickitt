@@ -14,4 +14,5 @@ function pickitt(group) {
         throw "pickitt: Function expected array, and instead got " + typeof group + ".";
     }
 }
-exports.pickitt = pickitt;
+
+module.exports = pickitt;
