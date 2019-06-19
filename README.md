@@ -24,7 +24,6 @@
 - [About](#about)
 - [Installing](#installing)
 - [Usage](#usage)
-- [Built Using](#built_using)
 - [Author](#author)
 - [Acknowledgments](#acknowledgement)
 
@@ -55,12 +54,6 @@ const testArray = ["item1", "item2", "item3"];
 
 const randomElement = pickitt(testArray); // <-- 'item1', 'item2', or 'item3'
 ```
-
-## ⛏️ Built Using <a name="built_using"></a>
-
-- [Grommet](https://v2.grommet.io/) - UI Framework
-- [React](https://reactjs.org/) - UI Framework
-- [react-custom-scrollbars](https://malte-wessel.com/react-custom-scrollbars/) - Sidebar Scrolling
 
 ## ✍️ Author <a name="author"></a>
 
