@@ -42,7 +42,7 @@
   "homepage": "https://pickitt.netlify.com/",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^10.11.7",
+    "@types/node": "^12.6.8",
     "buble": "^0.19.4",
     "docz": "^0.12.5",
     "jest": "^23.6.0",
