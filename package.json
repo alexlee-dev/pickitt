@@ -11,9 +11,9 @@
     "src"
   ],
   "scripts": {
+    "build": "babel src -d lib",
     "test": "jest --coverage",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "report": "parcel serve --no-cache coverage/lcov-report/index.html --open"
   },
   "repository": {
     "type": "git",
@@ -32,20 +32,19 @@
   ],
   "author": {
     "name": "Alex Lee",
-    "email": "alex@alex-lee.site",
-    "url": "https://www.alex-lee.site/"
+    "email": "alex@alexlee.dev",
+    "url": "https://www.alexlee.dev/"
   },
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/alexlee-dev/pickitt/issues"
   },
   "homepage": "https://pickitt.netlify.com/",
-  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^10.11.7",
-    "buble": "^0.19.4",
-    "docz": "^0.12.5",
-    "jest": "^23.6.0",
-    "logrocket": "^0.6.17"
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "jest": "^24.9.0",
+    "parcel-bundler": "^1.12.4"
   }
 }
