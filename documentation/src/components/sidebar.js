@@ -27,6 +27,7 @@ const StyledTitleHeight = styled.div`
 `
 
 const StyledTitle = styled(Typography)`
+  font-family: 'Fjalla One', sans-serif !important;
   font-size: 2.5rem !important;
 `
 

@@ -16,10 +16,16 @@ const StyledContent = styled.div`
   flex-grow: 1;
 `
 
+const StyledInnerContainer = styled.div`
+  margin-left: 240px;
+  padding: 25px;
+  width: calc(100% - 240px);
+`
+
 const theme = createMuiTheme({
-  // typography: {
-  //   fontFamily: ["Source Sans Pro"]
-  // }
+  typography: {
+    fontFamily: ['Noto Sans']
+  }
 })
 
 const Layout = props => {
@@ -29,7 +35,7 @@ const Layout = props => {
         <StyledContent>
           <Header />
           <Sidebar />
-          {props.children}
+          <StyledInnerContainer>{props.children}</StyledInnerContainer>
         </StyledContent>
         <Footer />
       </StyledContainer>
