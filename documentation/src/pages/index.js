@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Divider, Typography } from '@material-ui/core'
 import styled from 'styled-components'
 import Code from '../components/code'
+import Helmet from '../components/helmet'
 
 const StyledTitle = styled(Typography)`
   font-size: 2rem;
@@ -24,6 +25,7 @@ const StyledHeading = styled(Typography)`
 const HomePage = () => {
   return (
     <Box>
+      <Helmet title="Documentation" />
       <Box>
         <StyledTitle variant="h2">Documentation</StyledTitle>
         <StyledSubTitle>

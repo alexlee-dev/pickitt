@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './header'
-import Footer from './footer'
 import '../styles/index.css'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core'
 import styled from 'styled-components'
@@ -29,6 +28,7 @@ const theme = createMuiTheme({
 })
 
 const Layout = props => {
+  console.log({ layoutProps: props })
   return (
     <MuiThemeProvider theme={theme}>
       <StyledContainer>
@@ -37,7 +37,6 @@ const Layout = props => {
           <Sidebar />
           <StyledInnerContainer>{props.children}</StyledInnerContainer>
         </StyledContent>
-        <Footer />
       </StyledContainer>
     </MuiThemeProvider>
   )

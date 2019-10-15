@@ -5,6 +5,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-templates-method-js": hot(preferDefault(require("/Users/alex/Repos/pickitt/documentation/src/templates/method.js"))),
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/alex/Repos/pickitt/documentation/.cache/dev-404-page.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/alex/Repos/pickitt/documentation/src/pages/index.js")))
 }
