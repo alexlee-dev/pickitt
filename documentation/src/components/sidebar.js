@@ -9,9 +9,9 @@ import {
   Typography,
   Box
 } from '@material-ui/core'
-import InboxIcon from '@material-ui/icons/MoveToInbox'
-import MailIcon from '@material-ui/icons/Mail'
+import BookIcon from '@material-ui/icons/Book'
 import styled from 'styled-components'
+import CodeIcon from '@material-ui/icons/Code'
 
 const StyledTitleContainer = styled(Box)`
   align-items: center;
@@ -47,10 +47,19 @@ const Sidebar = () => {
       </StyledTitleContainer>
       <Divider />
       <List>
-        {['Home', 'pickitt', 'posOrNeg()', 'randItem()'].map((text, index) => (
+        <ListItem button>
+          <ListItemIcon>
+            <BookIcon />
+          </ListItemIcon>
+          <ListItemText primary="pickitt" />
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        {['posOrNeg()', 'randItem()'].map(text => (
           <ListItem button key={text}>
             <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <CodeIcon />
             </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
