@@ -18,8 +18,8 @@ const StyledContent = styled.div`
 
 const StyledInnerContainer = styled.div`
   margin-left: 240px;
-  padding: 25px;
-  width: calc(100% - 240px);
+  padding: 50px;
+  // width: calc(100% - 240px);
 `
 
 const theme = createMuiTheme({

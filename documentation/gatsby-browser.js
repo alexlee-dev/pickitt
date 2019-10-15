@@ -1,8 +1,11 @@
 import React from 'react'
 import Layout from './src/components/layout'
-// import { Provider } from "react-redux";
-// import store from "./src/store";
+import { StylesProvider } from '@material-ui/core/styles'
 
 export const wrapRootElement = ({ element }) => {
-  return <Layout>{element}</Layout>
+  return (
+    <StylesProvider injectFirst>
+      <Layout>{element}</Layout>
+    </StylesProvider>
+  )
 }
