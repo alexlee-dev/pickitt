@@ -17,3 +17,8 @@ input.search-input {
   transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   width: '100%';
 }
+
+pre.code {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}

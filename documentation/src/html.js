@@ -23,7 +23,7 @@ export default function HTML(props) {
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
-        <script src="https://raw.githack.com/alexlee-dev/pickitt/rewrite/documentation/prism.js" />
+        {/* <script src="https://raw.githack.com/alexlee-dev/pickitt/rewrite/documentation/prism.js" /> */}
         <div
           key={`body`}
           id="___gatsby"

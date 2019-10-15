@@ -33,6 +33,15 @@ const HomePage = () => {
         <StyledDivider />
         <StyledHeading variant="h3">Installation</StyledHeading>
         <Code code={'npm install pickitt'} language="bash" />
+        <StyledHeading variant="h3">Usage</StyledHeading>
+        <Code
+          code={`import { randItem } from 'pickitt'
+
+const testArray = ['item1', 'item2', 'item3']
+
+const randomElement = randItem(testArray) // <-- 'item1', 'item2', or 'item3'`}
+          language="js"
+        />
       </Box>
     </Box>
   )

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Prism from 'prismjs'
 
 const Code = ({ code, language }) => {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
+  
   return (
-    <pre class={`language-${language}`}>
-      <code class={`language-${language}`}>{code}</code>
+    <pre className={`language-${language} code`}>
+      <code className={`language-${language}`}>{code}</code>
     </pre>
   )
 }
