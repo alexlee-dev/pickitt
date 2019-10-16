@@ -34,7 +34,7 @@
     "email": "alex@alexlee.dev",
     "url": "https://www.alexlee.dev/"
   },
-  "license": "GPL-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexlee-dev/pickitt/issues"
   },
