@@ -63,3 +63,6 @@ typings/
 \.docz/app/
 
 \.docz/cache/
+
+documentation/.cache
+documentation/public
