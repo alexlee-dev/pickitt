@@ -13,7 +13,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link
-          href="https://raw.githack.com/alexlee-dev/pickitt/rewrite/documentation/prism.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-tomorrow.min.css"
           rel="stylesheet"
         />
         {props.headComponents}
