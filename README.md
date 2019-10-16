@@ -1,13 +1,13 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=256px height=256px src="https://github.com/alexlee-dev/pickitt/blob/master/documentation/images/pick.svg" alt="pickitt logo"></a>
+ <img width=256px height=256px src="https://github.com/alexlee-dev/pickitt/blob/master/pick.svg" alt="pickitt logo"></a>
 </p>
 
 <h3 align="center">Pickitt</h3>
 
 <div align="center">
 
-[![NPM Version][npm-image]][npm-url] [![NPM Total Downloads][npm-downloads]][npm-url] [![npm bundle size (minified + gzip)][size-image]][npm-url] [![Coverage Status](https://coveralls.io/repos/github/alexlee-dev/pickitt/badge.svg?branch=master)](https://coveralls.io/github/alexlee-dev/pickitt?branch=master) [![Build Status](https://travis-ci.org/alexlee-dev/pickitt.svg?branch=master)](https://travis-ci.org/alexlee-dev/pickitt.svg?branch=master)
+[![NPM Version][npm-image]][npm-url] [![NPM Total Downloads][npm-downloads]][npm-url] [![npm bundle size (minified + gzip)][size-image]][npm-url]
 
 </div>
 
@@ -48,11 +48,11 @@ yarn add pickitt
 ## 🎈 Usage <a name="usage"></a>
 
 ```js
-import { pickitt } from "pickitt";
+import { posOrNeg } from "pickitt";
 
-const testArray = ["item1", "item2", "item3"];
+const randomPosOrNegNum = posOrNeg() * 58
 
-const randomElement = pickitt(testArray); // <-- 'item1', 'item2', or 'item3'
+// `randomPosOrNegNum` will either be 58 or -58
 ```
 
 ## ✍️ Author <a name="author"></a>
@@ -62,10 +62,9 @@ const randomElement = pickitt(testArray); // <-- 'item1', 'item2', or 'item3'
 ## 🎉 Acknowledgements <a name="acknowledgement"></a>
 
 - Pick Icon by [freepik](http://www.freepik.com) from [www.flaticon.com](www.flaticon.com).
-- Concept from [lodash/sample](https://www.npmjs.com/package/lodash.sample).
 
 [npm-image]: https://img.shields.io/npm/v/pickitt.svg
 [npm-downloads]: https://img.shields.io/npm/dt/pickitt.svg
 [npm-url]: https://www.npmjs.com/package/pickitt
 [size-image]: https://img.shields.io/bundlephobia/minzip/pickitt.svg
-[pickitt-icon]: https://github.com/alexlee-dev/pickitt/raw/master/pickitt.png
+[pickitt-icon]: https://github.com/alexlee-dev/pickitt/raw/master/pickitt.svg
