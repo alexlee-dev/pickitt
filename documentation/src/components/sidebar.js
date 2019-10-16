@@ -12,6 +12,7 @@ import {
 import BookIcon from '@material-ui/icons/Book'
 import styled from 'styled-components'
 import CodeIcon from '@material-ui/icons/Code'
+import { Link } from 'gatsby'
 
 const StyledTitleContainer = styled(Box)`
   align-items: center;
@@ -31,7 +32,12 @@ const StyledTitle = styled(Typography)`
   font-size: 2.5rem !important;
 `
 
-const Sidebar = () => {
+const StyledLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+`
+
+const Sidebar = props => {
   return (
     <Drawer
       anchor="left"
@@ -43,27 +49,33 @@ const Sidebar = () => {
     >
       <StyledTitleContainer>
         <StyledTitleHeight>
-          <StyledTitle variant="h1">pickitt</StyledTitle>
+          <StyledLink to="/">
+            <StyledTitle variant="h1">pickitt</StyledTitle>
+          </StyledLink>
         </StyledTitleHeight>
       </StyledTitleContainer>
       <Divider />
       <List>
-        <ListItem button>
-          <ListItemIcon>
-            <BookIcon />
-          </ListItemIcon>
-          <ListItemText primary="pickitt" />
-        </ListItem>
+        <StyledLink to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <BookIcon />
+            </ListItemIcon>
+            <ListItemText primary="pickitt" />
+          </ListItem>
+        </StyledLink>
       </List>
       <Divider />
       <List>
         {['posOrNeg()', 'randItem()'].map(text => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              <CodeIcon />
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+          <StyledLink key={text} to={`/methods/${text.replace('()', '')}/`}>
+            <ListItem button>
+              <ListItemIcon>
+                <CodeIcon />
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          </StyledLink>
         ))}
       </List>
     </Drawer>

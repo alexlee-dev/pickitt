@@ -28,7 +28,6 @@ const theme = createMuiTheme({
 })
 
 const Layout = props => {
-  console.log({ layoutProps: props })
   return (
     <MuiThemeProvider theme={theme}>
       <StyledContainer>
