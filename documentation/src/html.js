@@ -17,6 +17,7 @@ export default function HTML(props) {
           href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-tomorrow.min.css"
           rel="stylesheet"
         />
+        <title>Documentation | Pickitt</title>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
