@@ -34,30 +34,28 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-const NotFoundPage = () => {
-  return (
+const NotFoundPage = () => (
+  <Box>
+    <Helmet title="Page Not Found" />
     <Box>
-      <Helmet title="Page Not Found" />
-      <Box>
-        <StyledTitle variant="h2">Page Not Found</StyledTitle>
-        <StyledImageContainer>
-          <StyledImage alt="Page Not Found" src={NotFoundImage} />
-        </StyledImageContainer>
-        <StyledSubTitle>
-          Your dog is cute but honestly a menace. Where are my shoes? Where is
-          my graduation certificate? Where is the chocolate cake I baked for my
-          Aunt’s birthday? And why did you take your dog to the vet on that same
-          Thursday?!
-        </StyledSubTitle>
-        <StyledDivider />
-        <StyledLink>
-          <Button color="default" startIcon={<HomeIcon />} variant="contained">
-            Home
-          </Button>
-        </StyledLink>
-      </Box>
+      <StyledTitle variant="h2">Page Not Found</StyledTitle>
+      <StyledImageContainer>
+        <StyledImage alt="Page Not Found" src={NotFoundImage} />
+      </StyledImageContainer>
+      <StyledSubTitle>
+        Your dog is cute but honestly a menace. Where are my shoes? Where is my
+        graduation certificate? Where is the chocolate cake I baked for my
+        Aunt’s birthday? And why did you take your dog to the vet on that same
+        Thursday?!
+      </StyledSubTitle>
+      <StyledDivider />
+      <StyledLink>
+        <Button color="default" startIcon={<HomeIcon />} variant="contained">
+          Home
+        </Button>
+      </StyledLink>
     </Box>
-  )
-}
+  </Box>
+)
 
 export default NotFoundPage

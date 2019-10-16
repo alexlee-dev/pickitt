@@ -11,14 +11,12 @@ const theme = createMuiTheme({
   }
 })
 
-const Layout = props => {
-  return (
-    <Provider store={store}>
-      <MuiThemeProvider theme={theme}>
-        <AppContainer content={props.children} />
-      </MuiThemeProvider>
-    </Provider>
-  )
-}
+const Layout = props => (
+  <Provider store={store}>
+    <MuiThemeProvider theme={theme}>
+      <AppContainer content={props.children} />
+    </MuiThemeProvider>
+  </Provider>
+)
 
 export default Layout
