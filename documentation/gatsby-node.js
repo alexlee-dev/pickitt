@@ -8,8 +8,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
       allMethodsJson {
         edges {
           node {
-            description
             name
+            parameters {
+              name
+              description
+              required
+              type
+            }
+            description
+            returns {
+              description
+              type
+            }
+            since
             usage
           }
         }
@@ -23,7 +34,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/methods/${edge.node.name}`,
       context: {
         description: edge.node.description,
+        parameters: edge.node.parameters,
         name: edge.node.name,
+        returns: edge.node.returns,
+        since: edge.node.since,
         usage: edge.node.usage
       }
     })

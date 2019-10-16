@@ -21,15 +21,36 @@ const StyledHeading = styled(Typography)`
   font-size: 1.5rem;
 `
 
+const StyledParagraph = styled(Typography)`
+  margin-bottom: 25px;
+  margin-top: 25px;
+`
+
 const MethodTemplate = ({ pageContext }) => {
-  const { description, name, usage } = pageContext
+  const { description, parameters, name, returns, since, usage } = pageContext
   return (
     <Box>
       <Helmet title={name} />
       <Box>
-        <StyledTitle variant="h2">{`${name}()`}</StyledTitle>
+        <StyledTitle variant="h2">{`${name}(${parameters.map(
+          ({ name }) => name
+        )})`}</StyledTitle>
         <StyledSubTitle>{description}</StyledSubTitle>
         <StyledDivider />
+        <StyledHeading variant="h3">Since</StyledHeading>
+        <StyledParagraph>{since}</StyledParagraph>
+        {parameters.length > 0 && (
+          <StyledHeading variant="h3">Parameters</StyledHeading>
+        )}
+        {parameters.map(({ name, description, required, type }) => {
+          return (
+            <Box>
+              <StyledParagraph>{`${name} (${type}): ${description} - Required: ${required}`}</StyledParagraph>
+            </Box>
+          )
+        })}
+        <StyledHeading variant="h3">Returns</StyledHeading>
+        <StyledParagraph>{`(${returns.type}): ${returns.description}`}</StyledParagraph>
         <StyledHeading variant="h3">Usage</StyledHeading>
         <Code code={usage} language="js" />
       </Box>

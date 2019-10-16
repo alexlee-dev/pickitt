@@ -2,11 +2,30 @@
   {
     "name": "posOrNeg",
     "description": "Returns either -1 or 1, to help in assigning a random positive or negative sign to a number.",
+    "parameters": [],
+    "returns": {
+      "description": "Either -1 or 1.",
+      "type": "Number"
+    },
+    "since": "2.0.0",
     "usage": "import { posOrNeg } from 'pickitt' \n\nconst randomPosOrNegNum = posOrNeg() * 58\n\n// `randomPosOrNegNum` will either be 58 or -58"
   },
   {
     "name": "randItem",
     "description": "Returns a random item from a group of items.",
+    "parameters": [
+      {
+        "name": "group",
+        "description": "Group of items.",
+        "required": true,
+        "type": "Array"
+      }
+    ],
+    "returns": {
+      "description": "A random item from the group.",
+      "type": "Any"
+    },
+    "since": "1.0.0",
     "usage": "import { randItem } from 'pickitt'\n\nconst testArray = ['item1', 'item2', 'item3']\n\nconst randomElement = randItem(testArray) // <-- 'item1', 'item2', or 'item3'"
   }
 ]
