@@ -66,6 +66,7 @@ const randomElement = randItem(testArray) // <-- 'item1', 'item2', or 'item3'`}
         <StyledButtonContainer>
           <StyledButtonAnchor
             href="https://www.npmjs.com/package/pickitt"
+            rel="noopener"
             target="_blank"
           >
             <Button
@@ -79,6 +80,7 @@ const randomElement = randItem(testArray) // <-- 'item1', 'item2', or 'item3'`}
 
           <StyledButtonAnchor
             href="https://github.com/alexlee-dev/pickitt"
+            rel="noopener"
             target="_blank"
           >
             <StyledSecondButton
