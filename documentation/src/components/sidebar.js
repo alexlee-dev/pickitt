@@ -58,63 +58,61 @@ const StyledIconButton = styled(IconButton)`
   margin-left: 50px;
 `
 
-const Sidebar = ({ handleSidebarClose, isMobile, isSidebarOpen }) => {
-  return (
-    <Drawer
-      anchor="left"
-      classes={{
-        paper: 'drawer-paper'
-      }}
-      open={isSidebarOpen}
-      variant="persistent"
-    >
-      {isMobile ? (
-        <StyledTitleContainerMobile>
-          <StyledTitleHeightMobile>
-            <StyledLink to="/">
-              <StyledTitle variant="h1">pickitt</StyledTitle>
-            </StyledLink>
-          </StyledTitleHeightMobile>
-          <StyledIconButton onClick={handleSidebarClose}>
-            <ChevronLeftIcon />
-          </StyledIconButton>
-        </StyledTitleContainerMobile>
-      ) : (
-        <StyledTitleContainerLarge>
-          <StyledTitleHeightLarge>
-            <StyledLink to="/">
-              <StyledTitle variant="h1">pickitt</StyledTitle>
-            </StyledLink>
-          </StyledTitleHeightLarge>
-        </StyledTitleContainerLarge>
-      )}
-      <Divider />
-      <List>
-        <StyledLink to="/">
+const Sidebar = ({ handleSidebarClose, isMobile, isSidebarOpen }) => (
+  <Drawer
+    anchor="left"
+    classes={{
+      paper: 'drawer-paper'
+    }}
+    open={isSidebarOpen}
+    variant="persistent"
+  >
+    {isMobile ? (
+      <StyledTitleContainerMobile>
+        <StyledTitleHeightMobile>
+          <StyledLink to="/">
+            <StyledTitle variant="h1">pickitt</StyledTitle>
+          </StyledLink>
+        </StyledTitleHeightMobile>
+        <StyledIconButton onClick={handleSidebarClose}>
+          <ChevronLeftIcon />
+        </StyledIconButton>
+      </StyledTitleContainerMobile>
+    ) : (
+      <StyledTitleContainerLarge>
+        <StyledTitleHeightLarge>
+          <StyledLink to="/">
+            <StyledTitle variant="h1">pickitt</StyledTitle>
+          </StyledLink>
+        </StyledTitleHeightLarge>
+      </StyledTitleContainerLarge>
+    )}
+    <Divider />
+    <List>
+      <StyledLink to="/">
+        <ListItem button>
+          <ListItemIcon>
+            <BookIcon />
+          </ListItemIcon>
+          <ListItemText primary="pickitt" />
+        </ListItem>
+      </StyledLink>
+    </List>
+    <Divider />
+    <List>
+      {['posOrNeg()', 'randItem()'].map(text => (
+        <StyledLink key={text} to={`/methods/${text.replace('()', '')}/`}>
           <ListItem button>
             <ListItemIcon>
-              <BookIcon />
+              <CodeIcon />
             </ListItemIcon>
-            <ListItemText primary="pickitt" />
+            <ListItemText primary={text} />
           </ListItem>
         </StyledLink>
-      </List>
-      <Divider />
-      <List>
-        {['posOrNeg()', 'randItem()'].map(text => (
-          <StyledLink key={text} to={`/methods/${text.replace('()', '')}/`}>
-            <ListItem button>
-              <ListItemIcon>
-                <CodeIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          </StyledLink>
-        ))}
-      </List>
-    </Drawer>
-  )
-}
+      ))}
+    </List>
+  </Drawer>
+)
 
 const mapStateToProps = ({ ui }) => ({
   isMobile: ui.isMobile,
