@@ -45,12 +45,18 @@ const MethodTemplate = ({ pageContext }) => {
         {parameters.map(({ name, description, required, type }) => {
           return (
             <Box>
-              <StyledParagraph>{`${name} (${type}): ${description} - Required: ${required}`}</StyledParagraph>
+              <StyledParagraph>
+                {`${name} (${type}) ${required && '- Required'}: `}
+                <i>{description}</i>
+              </StyledParagraph>
             </Box>
           )
         })}
         <StyledHeading variant="h3">Returns</StyledHeading>
-        <StyledParagraph>{`(${returns.type}): ${returns.description}`}</StyledParagraph>
+        <StyledParagraph>
+          {`(${returns.type}): `}
+          <i>{returns.description}</i>
+        </StyledParagraph>
         <StyledHeading variant="h3">Usage</StyledHeading>
         <Code code={usage} language="js" />
       </Box>
