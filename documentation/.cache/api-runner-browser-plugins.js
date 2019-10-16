@@ -3,7 +3,7 @@ module.exports = [{
       options: {"plugins":[],"stylesProvider":{"injectFirst":true}},
     },{
       plugin: require('/Users/alex/Repos/pickitt/documentation/node_modules/gatsby-plugin-web-font-loader/gatsby-browser.js'),
-      options: {"plugins":[],"google":{"families":["Fjalla One","Noto Sans"]}},
+      options: {"plugins":[],"google":{"families":["Noto Sans"]}},
     },{
       plugin: require('/Users/alex/Repos/pickitt/documentation/gatsby-browser.js'),
       options: {"plugins":[]},
