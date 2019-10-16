@@ -5,7 +5,7 @@ const Code = ({ code, language }) => {
   useEffect(() => {
     Prism.highlightAll()
   }, [])
-  
+
   return (
     <pre className={`language-${language} code`}>
       <code className={`language-${language}`}>{code}</code>

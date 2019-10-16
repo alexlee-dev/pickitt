@@ -44,7 +44,7 @@ const MethodTemplate = ({ pageContext }) => {
         )}
         {parameters.map(({ name, description, required, type }) => {
           return (
-            <Box>
+            <Box key={name}>
               <StyledParagraph>
                 {`${name} (${type}) ${required && '- Required'}: `}
                 <i>{description}</i>

@@ -40,59 +40,59 @@ const StyledButtonAnchor = styled.a`
   text-decoration: none;
 `
 
-const HomePage = () => {
-  return (
+const HomePage = () => (
+  <Box>
+    <Helmet title="Documentation" />
     <Box>
-      <Helmet title="Documentation" />
-      <Box>
-        <StyledTitle variant="h2">Documentation</StyledTitle>
-        <StyledSubTitle>
-          Welcome to Pickitt! Get familiar with pickitt's methods, and explore
-          how to start using pickitt for yourself.
-        </StyledSubTitle>
-        <StyledDivider />
-        <StyledHeading variant="h3">Installation</StyledHeading>
-        <Code code={'npm install pickitt'} language="bash" />
-        <StyledHeading variant="h3">Usage</StyledHeading>
-        <Code
-          code={`import { randItem } from 'pickitt'
+      <StyledTitle variant="h2">Documentation</StyledTitle>
+      <StyledSubTitle>
+        Welcome to Pickitt! Get familiar with pickitt's methods, and explore how
+        to start using pickitt for yourself.
+      </StyledSubTitle>
+      <StyledDivider />
+      <StyledHeading variant="h3">Installation</StyledHeading>
+      <Code code={'npm install pickitt'} language="bash" />
+      <StyledHeading variant="h3">Usage</StyledHeading>
+      <Code
+        code={`import { randItem } from 'pickitt'
 
 const testArray = ['item1', 'item2', 'item3']
 
 const randomElement = randItem(testArray) // <-- 'item1', 'item2', or 'item3'`}
-          language="js"
-        />
-        <StyledHeading variant="h3">Links</StyledHeading>
-        <StyledButtonContainer>
-          <StyledButtonAnchor
-            href="https://www.npmjs.com/package/pickitt"
-            target="_blank"
+        language="js"
+      />
+      <StyledHeading variant="h3">Links</StyledHeading>
+      <StyledButtonContainer>
+        <StyledButtonAnchor
+          href="https://www.npmjs.com/package/pickitt"
+          rel="noopener"
+          target="_blank"
+        >
+          <Button
+            color="default"
+            startIcon={<GetAppIcon />}
+            variant="contained"
           >
-            <Button
-              color="default"
-              startIcon={<GetAppIcon />}
-              variant="contained"
-            >
-              NPM
-            </Button>
-          </StyledButtonAnchor>
+            NPM
+          </Button>
+        </StyledButtonAnchor>
 
-          <StyledButtonAnchor
-            href="https://github.com/alexlee-dev/pickitt"
-            target="_blank"
+        <StyledButtonAnchor
+          href="https://github.com/alexlee-dev/pickitt"
+          rel="noopener"
+          target="_blank"
+        >
+          <StyledSecondButton
+            color="primary"
+            startIcon={<CodeIcon />}
+            variant="contained"
           >
-            <StyledSecondButton
-              color="primary"
-              startIcon={<CodeIcon />}
-              variant="contained"
-            >
-              GitHub
-            </StyledSecondButton>
-          </StyledButtonAnchor>
-        </StyledButtonContainer>
-      </Box>
+            GitHub
+          </StyledSecondButton>
+        </StyledButtonAnchor>
+      </StyledButtonContainer>
     </Box>
-  )
-}
+  </Box>
+)
 
 export default HomePage
