@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 const StyledContainer = styled.div`
   flex-grow: 1;
-  margin-left: 240px;
   width: calc(100% - 240px);
 `
 
@@ -30,10 +29,14 @@ const StyledSearchIconContainer = styled.div`
   width: 56px;
 `
 
+const StyledAppBar = styled(AppBar)`
+  margin-left: 240px;
+`
+
 const Header = () => {
   return (
     <StyledContainer>
-      <AppBar position="static">
+      <StyledAppBar position="static">
         <Toolbar>
           <StyledSearchContainer>
             <StyledSearchIconContainer>
@@ -49,7 +52,7 @@ const Header = () => {
             />
           </StyledSearchContainer>
         </Toolbar>
-      </AppBar>
+      </StyledAppBar>
     </StyledContainer>
   )
 }
