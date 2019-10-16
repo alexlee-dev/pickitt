@@ -1,8 +1,12 @@
 [
   {
-    "name": "posOrNeg"
+    "name": "posOrNeg",
+    "description": "Returns either -1 or 1, to help in assigning a random positive or negative sign to a number.",
+    "usage": "import { posOrNeg } from 'pickitt' \n\nconst randomPosOrNegNum = posOrNeg() * 58\n\n// `randomPosOrNegNum` will either be 58 or -58"
   },
   {
-    "name": "randItem"
+    "name": "randItem",
+    "description": "Returns a random item from a group of items.",
+    "usage": "import { randItem } from 'pickitt'\n\nconst testArray = ['item1', 'item2', 'item3']\n\nconst randomElement = randItem(testArray) // <-- 'item1', 'item2', or 'item3'"
   }
 ]

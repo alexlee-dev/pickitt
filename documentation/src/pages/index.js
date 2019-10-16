@@ -15,7 +15,6 @@ const StyledSubTitle = styled(Typography)`
 const StyledDivider = styled(Divider)`
   margin-bottom: 25px;
   margin-top: 25px;
-  // width: 90%;
 `
 
 const StyledHeading = styled(Typography)`

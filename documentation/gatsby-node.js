@@ -8,7 +8,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
       allMethodsJson {
         edges {
           node {
+            description
             name
+            usage
           }
         }
       }
@@ -20,7 +22,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
       component: methodTemplate,
       path: `/methods/${edge.node.name}`,
       context: {
-        name: edge.node.name
+        description: edge.node.description,
+        name: edge.node.name,
+        usage: edge.node.usage
       }
     })
   })
