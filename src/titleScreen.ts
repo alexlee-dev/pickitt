@@ -53,10 +53,10 @@ const figletPromise: Function = (
     )
   );
 
-const titleScreen: Function = () =>
+const titleScreen: Function = (title: string) =>
   new Promise(async (resolve: Function, reject: Function) => {
     try {
-      const text: string = await figletPromise("Job Applications", {
+      const text: string = await figletPromise(title, {
         font: "slant"
       });
 
