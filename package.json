@@ -1,6 +1,6 @@
 {
   "name": "pickitt",
-  "version": "3.0.5",
+  "version": "3.0.3",
   "description": "When you need a computer to just pick it, reach for Pickitt!",
   "main": "lib/index.js",
   "files": [
@@ -16,7 +16,7 @@
     "build": "npm run clean && npm run lint && tsc",
     "test": "jest",
     "coverage": "jest --coverage",
-    "build-docs": "rimraf docs && npm i typescript && npx typedoc --out docs src"
+    "build-docs": "rimraf docs && typedoc --out docs src --mode modules --includeDeclarations --excludeExternals --name 'Pickitt' --includeVersion"
   },
   "repository": {
     "type": "git",
