@@ -2,7 +2,7 @@
   "name": "pickitt",
   "version": "2.0.3",
   "description": "When you need a computer to just pick it, reach for Pickitt!",
-  "main": "lib/pickitt.js",
+  "main": "lib/index.js",
   "files": [
     "LICENSE",
     "package.json",
@@ -10,9 +10,8 @@
     "lib"
   ],
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest --coverage",
-    "report": "parcel serve --no-cache coverage/lcov-report/index.html --open"
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc"
   },
   "repository": {
     "type": "git",
@@ -40,10 +39,11 @@
   },
   "homepage": "https://pickitt.netlify.com/",
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "jest": "^24.9.0",
-    "parcel-bundler": "^1.12.4"
+    "@types/node": "^13.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
   }
 }
