@@ -1,4 +1,4 @@
-import { posOrNeg, randItem } from '../src/pickitt'
+const { posOrNeg, randItem } = require('../lib/index')
 
 describe('posOrNeg(', () => {
   test('Should return a positive or negative 1.', () => {

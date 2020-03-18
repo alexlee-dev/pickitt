@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "clean": "rimraf lib",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && tsc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -43,7 +44,11 @@
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "eslint": "^6.8.0",
+    "jest": "^25.1.0",
     "rimraf": "^3.0.2",
     "typescript": "^3.8.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/documentation/"]
   }
 }
