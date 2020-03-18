@@ -1,4 +1,12 @@
-import { Group, GroupItem } from "./types/index";
+/**
+ * GroupItem - Item retrieved from Group using randItem().
+ */
+type GroupItem = object | [] | number | string;
+
+/**
+ * Group - Array used in randItem().
+ */
+type Group = [];
 
 /**
  * Returns a random item from an array.
