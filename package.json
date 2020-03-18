@@ -8,7 +8,8 @@
     "package.json",
     "README.md",
     "lib",
-    "index.d.ts"
+    "index.d.ts",
+    "pick.svg"
   ],
   "scripts": {
     "clean": "rimraf lib",
