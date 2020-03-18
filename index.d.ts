@@ -26,11 +26,11 @@ export function posOrNeg(): number;
 export function randItem(group: Group): GroupItem;
 
 /**
- * Reads a file and returns as parsed JSON.
+ * Reads a file and returns as parsed JSON object.
  * @param {string} path - Path to file to be read.
- * @returns {Promise} Resolves with JSON of the file.
+ * @returns {Promise} Resolves with JSON object of the file.
  */
-export function readIt(path: string): Promise<JSON>;
+export function readIt(path: string): Promise<object>;
 
 /**
  * Displays a title in the center of the terminal.
@@ -42,7 +42,7 @@ export function titleScreen(title: string): Promise<void>;
 /**
  * Writes JSON data to a file.
  * @param {string} path Path to file.
- * @param {JSON} data Data to be written.
+ * @param {string} data Data to be written.
  * @returns {Promise} Resolves after writing the file successfully.
  */
-export function writeIt(path: string, data: JSON): Promise<void>;
+export function writeIt(path: string, data: string): Promise<void>;
