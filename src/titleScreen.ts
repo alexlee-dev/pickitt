@@ -53,7 +53,12 @@ const figletPromise: Function = (
     )
   );
 
-const titleScreen: Function = (title: string) =>
+/**
+ * Displays a title in the center of the terminal.
+ * @param {String} title Title to be disaplayed.
+ * @returns {Promise} Resolves after logging to the console.
+ */
+const titleScreen: Function = (title: string): Promise<void> =>
   new Promise(async (resolve: Function, reject: Function) => {
     try {
       const text: string = await figletPromise(title, {
