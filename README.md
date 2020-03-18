@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=256px height=256px src="https://github.com/alexlee-dev/pickitt/blob/master/pick.svg" alt="pickitt logo"></a>
+ <img width=256px height=256px src="https://res.cloudinary.com/alexlee-dev/image/upload/v1584569795/pick.svg" alt="pickitt logo"></a>
 </p>
 
 <h3 align="center">Pickitt</h3>
@@ -50,7 +50,7 @@ yarn add pickitt
 ```js
 import { posOrNeg } from "pickitt";
 
-const randomPosOrNegNum = posOrNeg() * 58
+const randomPosOrNegNum = posOrNeg() * 58;
 
 // `randomPosOrNegNum` will either be 58 or -58
 ```
