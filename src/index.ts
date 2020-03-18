@@ -1,9 +1,11 @@
+import posOrNeg from "./posOrNeg";
 import randItem from "./randItem";
 import readIt from "./readIt";
-import posOrNeg from "./posOrNeg";
+import titleScreen from "./titleScreen";
 import writeIt from "./writeIt";
 
+export { posOrNeg };
 export { randItem };
 export { readIt };
-export { posOrNeg };
+export { titleScreen };
 export { writeIt };
