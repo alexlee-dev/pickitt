@@ -30,7 +30,7 @@ export function randItem(group: Group): GroupItem;
  * @param {string} path - Path to file to be read.
  * @returns {Promise} Resolves with JSON of the file.
  */
-export function readIt(path: string): Promise<JSON>;
+export function readIt(path: string): Promise<any>;
 
 /**
  * Displays a title in the center of the terminal.

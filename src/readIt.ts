@@ -7,7 +7,7 @@ import { readFile } from "fs";
  */
 const readIt: Function = (
   path: string
-): Promise<JSON> =>
+): Promise<any> =>
   new Promise((resolve, reject) => {
     try {
       readFile(path, (err: undefined | object, data: undefined | object) => {
