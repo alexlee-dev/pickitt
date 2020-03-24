@@ -5,9 +5,7 @@ import { readFile } from "fs";
  * @param {String} path - Path to file to be read.
  * @returns {Promise} Resolves with JSON of the file.
  */
-const readIt: Function = (
-  path: string
-): Promise<any> =>
+const readIt: Function = (path: string): Promise<object | any[]> =>
   new Promise((resolve, reject) => {
     try {
       readFile(path, (err: undefined | object, data: undefined | object) => {
