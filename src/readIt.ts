@@ -1,20 +1,15 @@
-import { readFile } from "fs";
+const readFile = require("fs").promises.readFile;
 
 /**
  * Reads a file and returns as parsed JSON.
  * @param {String} path - Path to file to be read.
  * @returns {Promise} Resolves with JSON of the file.
  */
-const readIt: Function = (path: string): Promise<object | any[]> =>
-  new Promise((resolve, reject) => {
+const readIt = <T = object | any[]>(path: string): Promise<T> =>
+  new Promise(async (resolve, reject) => {
     try {
-      readFile(path, (err: undefined | object, data: undefined | object) => {
-        if (err) {
-          return reject(err);
-        }
-
-        resolve(JSON.parse(data.toString()));
-      });
+      const data: Buffer = await readFile(path);
+      resolve(JSON.parse(data.toString()));
     } catch (e) {
       reject(e);
     }

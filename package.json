@@ -7,13 +7,12 @@
     "LICENSE",
     "package.json",
     "README.md",
-    "lib",
-    "index.d.ts"
+    "lib"
   ],
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint src/**/*",
-    "build": "npm run clean && npm run lint && tsc",
+    "build": "npm run clean && npm run lint && tsc --declaration",
     "test": "jest",
     "coverage": "jest --coverage",
     "build-docs": "rimraf docs && typedoc --out docs src --mode modules --includeDeclarations --excludeExternals --name 'Pickitt' --includeVersion"
