@@ -28,9 +28,9 @@ export function randItem(group: Group): GroupItem;
 /**
  * Reads a file and returns as parsed JSON object.
  * @param {string} path - Path to file to be read.
- * @returns {Promise} Resolves with JSON object of the file.
+ * @returns {Promise} Resolves with JSON of the file.
  */
-export function readIt(path: string): Promise<object>;
+export function readIt(path: string): Promise<object | string | [] | number>;
 
 /**
  * Displays a title in the center of the terminal.
