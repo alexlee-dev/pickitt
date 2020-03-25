@@ -1,12 +1,4 @@
-/**
- * GroupItem - Item retrieved from Group using randItem().
- */
-type GroupItem = object | [] | number | string;
-
-/**
- * Group - Array used in randItem().
- */
-type Group = [];
+import { Group, GroupItem } from "./types";
 
 /**
  * Returns a random item from an array.

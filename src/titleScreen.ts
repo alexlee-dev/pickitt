@@ -35,10 +35,7 @@ export const defaultBoxenStyle: boxenOptions = {
  * @param {Object} options Options object.
  * @returns {Promise} Resolves with text.
  */
-const figletPromise: Function = (
-  txt: string,
-  options: object = {}
-): Promise<string> =>
+const figletPromise = (txt: string, options: object = {}): Promise<string> =>
   new Promise((resolve, reject) =>
     figlet.text(
       txt,
@@ -58,8 +55,8 @@ const figletPromise: Function = (
  * @param {String} title Title to be disaplayed.
  * @returns {Promise} Resolves after logging to the console.
  */
-const titleScreen: Function = (title: string): Promise<void> =>
-  new Promise(async (resolve: Function, reject: Function) => {
+const titleScreen = (title: string): Promise<void> =>
+  new Promise(async (resolve, reject) => {
     try {
       const text: string = await figletPromise(title, {
         font: "slant"
