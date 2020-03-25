@@ -4,5 +4,5 @@
  * @param {string} data Data to be written.
  * @returns {Promise} Resolves after writing the file successfully.
  */
-declare const writeIt: Function;
+declare const writeIt: (path: string, data: string) => Promise<void>;
 export default writeIt;

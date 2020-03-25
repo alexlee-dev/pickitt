@@ -1,7 +1,4 @@
-/**
- * GroupItem - Item retrieved from Group using randItem().
- */
-declare type GroupItem = object | [] | number | string;
+import { GroupItem } from "./types";
 /**
  * Returns a random item from an array.
  * @param {Array} group Array of items.

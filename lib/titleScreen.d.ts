@@ -12,5 +12,5 @@ export declare const defaultBoxenStyle: boxenOptions;
  * @param {String} title Title to be disaplayed.
  * @returns {Promise} Resolves after logging to the console.
  */
-declare const titleScreen: Function;
+declare const titleScreen: (title: string) => Promise<void>;
 export default titleScreen;
